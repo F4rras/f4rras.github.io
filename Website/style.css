@@ -1,0 +1,211 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	gap: 10px;
+	scroll-behavior: smooth;
+}
+
+header {
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+}
+
+.logo-title {
+	gap: 20px;
+	cursor: pointer;
+	transition: all .5s ease 0s;
+	font-size: xx-large;
+}
+
+.logo-img{
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+}
+
+.logo:hover {
+	color: #FF6A3D;
+	transform: rotate(2deg);
+}
+
+.btn-cta {
+	margin-right: 10px;
+	border: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	background: #FF6A3D;
+	color: #eaeaea;
+	border-radius: 8px;
+}
+
+nav ul{
+	display: flex;
+	padding: 5px;
+	padding-bottom: 5PX;
+}
+
+li {
+	list-style-type: none;
+	padding: 15px;
+	font-size: medium;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block
+}
+
+li a:hover {
+	color: #FF6A3D;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+.img-foto {
+	width: 100%;
+	max-width: 380px;
+	max-height: auto;
+}
+
+.paralax {
+	background-image: url('assets/foto/beek.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 150vh;
+	background-size: 500px;
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 40px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+	
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 8px;
+}
+
+.card-item {
+	text-align: center;
+	width: 25%;
+	background:  #f7f7f7;
+	color: #222;
+	padding: 8px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.card-title{
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.icon {
+	margin: 10px;
+	padding: 4px;
+	width: 75px;
+	height: 75px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 500px) {
+	.card{
+		flex-direction: column;
+		gap: 0;
+		justify-content: center;
+		align-items: space-between;
+		display: contents;
+	}
+	.card-item {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		padding: 0;
+		gap: 10px;
+	}
+	.intro{
+		margin-top: 20px;
+	}
+	.nav ul {
+		padding: 5px;
+	}
+	nav {
+		position: bottom;
+		width: 50%;
+		bottom: 0;
+		background: #1A2238;
+		z-index: 9;
+	}
+	.logo {
+		padding: 10px;
+	}
+}
